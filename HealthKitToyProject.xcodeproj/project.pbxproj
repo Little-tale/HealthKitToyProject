@@ -19,6 +19,7 @@
 		7BB030772C47A92B00399D83 /* ExDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB030762C47A92B00399D83 /* ExDate.swift */; };
 		7BB030792C47AC6F00399D83 /* NumberFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB030782C47AC6E00399D83 /* NumberFormatManager.swift */; };
 		7BB0307B2C47AD1600399D83 /* ExDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0307A2C47AD1600399D83 /* ExDouble.swift */; };
+		7BB0307D2C47B80E00399D83 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7BB0307C2C47B80E00399D83 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7BB030762C47A92B00399D83 /* ExDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDate.swift; sourceTree = "<group>"; };
 		7BB030782C47AC6E00399D83 /* NumberFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatManager.swift; sourceTree = "<group>"; };
 		7BB0307A2C47AD1600399D83 /* ExDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDouble.swift; sourceTree = "<group>"; };
+		7BB0307C2C47B80E00399D83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		7BB0304D2C47951F00399D83 = {
 			isa = PBXGroup;
 			children = (
+				7BB0307C2C47B80E00399D83 /* README.md */,
 				7BB030702C47A4BB00399D83 /* 트러블 */,
 				7BB030672C4797BD00399D83 /* Memo.txt */,
 				7BB030582C47951F00399D83 /* HealthKitToyProject */,
@@ -153,6 +156,7 @@
 			files = (
 				7BB030612C47952000399D83 /* Preview Assets.xcassets in Resources */,
 				7BB030712C47A4BB00399D83 /* 트러블 in Resources */,
+				7BB0307D2C47B80E00399D83 /* README.md in Resources */,
 				7BB0305E2C47952000399D83 /* Assets.xcassets in Resources */,
 				7BB030682C4797BE00399D83 /* Memo.txt in Resources */,
 			);
