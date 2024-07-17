@@ -1,4 +1,15 @@
 
+        /*
+         HKObjectType : HealthKit 데이터베이스 에서 저장된 모든 데이터의 타입 정의한 추상 클래스
+         HKQuery: HealthKit 데이터베이스 에서 데이터를 검색하는 추상 클래스
+         HKQuantityType:  HealthKit 데이터베이스에 저장된 데이터의 타입 -> 걸음 수, 칼로리 소모, 심박수 등 HKObjectType 의 하위 클래스
+         HKQuantity: 특정한 건강 데이터 타입의 양
+         HKStatisticsQuery: HealthKit 에서 특정 데이터 타입에 대한 통계 정보를 요청하는 쿼리
+         
+         result.sumQuantity() -> HKStatisticsQuery의 결과에서 특정 기간 동안의 데이터 합계
+         */
+
+
 ## HKObjectType
 > 데이터 유형의 서브 클래스를 포함한 추상 슈퍼 클래스
 모든 HealthKit 데이터는 HKObjectType으로 묶여있음.

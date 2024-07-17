@@ -15,6 +15,10 @@
 		7BB0306C2C479ADC00399D83 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0306B2C479ADC00399D83 /* CardView.swift */; };
 		7BB0306E2C479D3100399D83 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0306D2C479D3100399D83 /* HealthManager.swift */; };
 		7BB030712C47A4BB00399D83 /* 트러블 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB030702C47A4BB00399D83 /* 트러블 */; };
+		7BB030752C47A83A00399D83 /* HealthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB030742C47A83A00399D83 /* HealthInfo.swift */; };
+		7BB030772C47A92B00399D83 /* ExDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB030762C47A92B00399D83 /* ExDate.swift */; };
+		7BB030792C47AC6F00399D83 /* NumberFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB030782C47AC6E00399D83 /* NumberFormatManager.swift */; };
+		7BB0307B2C47AD1600399D83 /* ExDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0307A2C47AD1600399D83 /* ExDouble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		7BB0306D2C479D3100399D83 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		7BB0306F2C47A0F000399D83 /* HealthKitToyProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitToyProject.entitlements; sourceTree = "<group>"; };
 		7BB030702C47A4BB00399D83 /* 트러블 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "트러블"; sourceTree = "<group>"; };
+		7BB030742C47A83A00399D83 /* HealthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfo.swift; sourceTree = "<group>"; };
+		7BB030762C47A92B00399D83 /* ExDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDate.swift; sourceTree = "<group>"; };
+		7BB030782C47AC6E00399D83 /* NumberFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatManager.swift; sourceTree = "<group>"; };
+		7BB0307A2C47AD1600399D83 /* ExDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDouble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +71,16 @@
 			isa = PBXGroup;
 			children = (
 				7BB0306F2C47A0F000399D83 /* HealthKitToyProject.entitlements */,
+				7BB030742C47A83A00399D83 /* HealthInfo.swift */,
 				7BB0306D2C479D3100399D83 /* HealthManager.swift */,
 				7BB030592C47951F00399D83 /* HealthKitToyProjectApp.swift */,
 				7BB0306B2C479ADC00399D83 /* CardView.swift */,
 				7BB0305B2C47951F00399D83 /* ContentView.swift */,
 				7BB0305D2C47952000399D83 /* Assets.xcassets */,
 				7BB0305F2C47952000399D83 /* Preview Content */,
+				7BB030762C47A92B00399D83 /* ExDate.swift */,
+				7BB030782C47AC6E00399D83 /* NumberFormatManager.swift */,
+				7BB0307A2C47AD1600399D83 /* ExDouble.swift */,
 			);
 			path = HealthKitToyProject;
 			sourceTree = "<group>";
@@ -153,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB030772C47A92B00399D83 /* ExDate.swift in Sources */,
+				7BB0307B2C47AD1600399D83 /* ExDouble.swift in Sources */,
+				7BB030752C47A83A00399D83 /* HealthInfo.swift in Sources */,
 				7BB0305C2C47951F00399D83 /* ContentView.swift in Sources */,
 				7BB0306C2C479ADC00399D83 /* CardView.swift in Sources */,
+				7BB030792C47AC6F00399D83 /* NumberFormatManager.swift in Sources */,
 				7BB0305A2C47951F00399D83 /* HealthKitToyProjectApp.swift in Sources */,
 				7BB0306E2C479D3100399D83 /* HealthManager.swift in Sources */,
 			);

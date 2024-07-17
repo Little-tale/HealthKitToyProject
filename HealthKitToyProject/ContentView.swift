@@ -37,8 +37,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            CardView()
-                .frame(height: 100)
+            LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 1)) {
+                ForEach(manager.healthInfo.sorted(by: { $0.value.sort < $1.value.sort }), id: \.key) { item in
+                    CardView(info: item.value)
+                        .frame(height: 100)
+                }
+            }
+        }
+        .onAppear {
+            manager.getInfo()
         }
         .padding()
     }

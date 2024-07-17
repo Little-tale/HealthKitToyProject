@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CardView: View {
     
+    @State var info: HealthInfo
+    
     var body: some View {
         
         ZStack {
@@ -17,20 +19,20 @@ struct CardView: View {
             VStack {
                 HStack(alignment: .top){
                     VStack(alignment: .leading, spacing: 5) {
-                        Text("걸음수")
+                        Text(info.title)
                             .font(.system(size: 14))
-                        Text("오늘의 목표 : ")
+                        Text(info.subTitle)
                             .font(.system(size: 11))
                     }
                     
                     Spacer()
                     
-                    Image(systemName: "figure.walk")
+                    Image(systemName: info.rightImage)
                         .foregroundStyle(.green)
                 }
                 .padding(.horizontal, 15)
                 
-                Text("1,000")
+                Text(info.amout)
                     .font(.system(size: 24, weight: .bold))
             }
         }
@@ -38,8 +40,4 @@ struct CardView: View {
     }
 }
 
-
-#Preview {
-    CardView()
-}
 
