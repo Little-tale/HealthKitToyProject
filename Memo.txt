@@ -1,0 +1,172 @@
+
+## HKObjectType
+> 데이터 유형의 서브 클래스를 포함한 추상 슈퍼 클래스
+모든 HealthKit 데이터는 HKObjectType으로 묶여있음.
+
+```swift
+    class HKObjectType : NSObject
+```
+
+## HKSampleType
+> 데이터 샘플을 나타내는 데 사용되는 클래스 의 추상 하위 클래스
+샘플 타입은 데이터에 해당하는 HealthKit들의 데이터 타입
+
+```swift
+    class HKCharacteristicType : HKObjectType
+```
+
+## HKCharacteristicType
+> 시간에 따라 변경되지 않는 데이터 유형
+
+```swift
+    class HKCharacteristicType : HKObjectType
+```
+
+## HKCharacteristicTypeIdentifier Data Type
+
+- activityMoveMode : 활동 에너지, 움직이기 시간
+- biologicalSex : 성별
+- bloodType : 혈액형
+- dateOfBirth : 생일
+- fitzpatrickSkinType : 피츠패트릭 피부 유형
+- wheelchairUse : 휠체어 사용 유무
+
+
+## HKQuantityType
+> 숫자 값 데이터 유형
+
+```swift
+    class HKQuantityType : HKSampleType
+```
+
+## HKQuantityTypeIdentifier DataType
+
+### Activity
+
+- stepCount : 걸음수
+- distanceWalkingRunning : 걷거나 달리면서 이동한 거리
+- runningGroundContactTime : 달리는 동안 발이 지면에 닿는 시간
+- runningPower : 러너가 속도를 유지하는데 필요한 수치
+- runningSpeed : 러너의 속도
+- runningStrideLength : 달리는 동안 한 걸음이 이동한 거리
+- runningVerticalOscillation : 단일 보폭 동안 골반 수직 운동 범위
+- distanceCycling : 자전거로 이동한 거리
+- pushCount : 휠체어를 사용하는동안 수행한 밀기 횟수
+- distanceWheelchair : 휠체어를 사용하요 이동한 거리
+- swimmingStrokeCount : 수영하는 동안 수행되는 스트로크 수 (발차기 횟수)
+- distanceSwimming : 수영하는 동안 이동한 거리
+- distanceDownhillSnowSports : 스키나 스노보드를 타는 동안 사용자가 이동한 거리
+- basalEnergyBurned : 소모한 휴식 에너지
+- activeEnergyBurned : 소모한 활성 에너지
+- flightsClimbed : 올라간 계단 수
+- nikeFuel : NikeFuel 포인트 수 (나이키 앱의 점수 용어)
+- appleExerciseTime : 운동한 시간
+- appleMoveTime : 지정된 날의 전신 움직임 소비 시간
+- appleStandTime : 서 있는 시간
+- vo2Max : 운동 중 최대 산소량
+
+### Body measurements
+
+- height : 키
+- bodyMass : 체중
+- bodyMassIndex : 체질량 지수
+- leanBodyMass : 체지방량
+- bodyFatPercentage : 체지방률
+- waistCircumference : 허리둘레
+- appleSleepingWristTemperature : 수면 중 손목 온도
+- Reproductive health
+- basalBodyTemperature : 기초 체온
+
+### Hearing
+
+- environmentalAudioExposure : 환경에서 소리에 대한 오디오 노출량
+- headphoneAudioExposure : 헤드폰의 오디오 노출량
+
+### Vital signs
+
+- heartRate : 심박수
+- restingHeartRate : 안정시 심박수
+- walkingHeartRateAverage : 걷는 동안 심박수
+- heartRateVariabilitySDNN : Heart Bit 간격의 표준 편차
+- heartRateRecoveryOneMinute : 최대 운동률에서 운동 종료 1분 후 심박수 감소량
+- atrialFibrillationBurden : Apple Watch 착용한 사람의 AFib(심방세동 - 부정맥 종류) 징후를 보이는 시간의 비율
+- oxygenSaturation : 산소 포화도
+- bodyTemperature : 체온
+- bloodPressureDiastolic : 이완기 혈압 (심장 이완시 동맥에 걸리는 압력)
+- bloodPressureSystolic : 수축기 혈압 (심장 수축시 동맥에 걸리는 압력)
+- respiratoryRate : 호흡 수
+
+### Lab and test results
+
+- bloodGlucose : 혈당 수준
+- electrodermalActivity : 전기 피부 활동
+- forcedExpiratoryVolume1 : 강제 호기의 1초 동안 폐에서 강제로 내쉴 수 있는 공기의 양
+- forcedVitalCapacity : 가능한 한 심호흡을 한 후 폐에서 강제로 내쉴 수 있는 공기의 양
+- inhalerUsage : 흡입기에서 취하는 흡입 횟수
+- insulinDelivery : 전달된 인슐린의 양
+- numberOfTimesFallen : 넘어진 횟수
+- peakExpiratoryFlowRate : 힘차게 내쉴때 발생하는 최대 유속
+- peripheralPerfusionIndex : 말초 관류 지수
+
+###Nutrition
+
+- dietaryBiotin : 비타민 B7 섭취량
+- dietaryCaffeine : 소비된 카페인의 양
+- dietaryCalcium : 소비된 칼슘의 양
+- dietaryCarbohydrates : 소비된 탄수화물의 양
+- dietaryChloride : 소비된 염화물의 양
+- dietaryCholesterol : 소비된 콜레스테롤의 양
+- dietaryChromium : 소비된 크롭의 양
+- dietaryCopper : 소비된 구리의 양
+- dietaryEnergyConsumed : 소비된 에너지의 양
+- dietaryFatMonounsaturated : 소비된 단일 불포화 지방의 양
+- dietaryFatPolyunsaturated : 소비된 고도불포화 지방의 양
+- dietaryFatSaturated : 소비된 포화 지방의 양
+- dietaryFatTotal : 소비된 지방의 총량
+- dietaryFiber : 소비된 섬유질의 양
+- dietaryFolate : 소비된 엽산의 양
+- dietaryIodine : 소비된 요오드의 양
+- dietaryIron : 소비된 철분의 양
+- dietaryMagnesium : 소비된 마그네슘의 양
+- dietaryManganese : 소비된 망간의 양
+- dietaryMolybdenum : 소비된 몰리브덴의 양
+- dietaryNiacin : 비타민 B3의 섭취량
+- dietaryPantothenicAcid : 비타민 B5의 섭취량
+- dietaryPhosphorus : 소비된 인의 양
+- dietaryPotassium : 소비된 칼륨의 양
+- dietaryProtein : 소비된 단백질의 양
+- dietaryRiboflavin : 소비된 리보플라빈 (비타민 B2)의 양
+- dietarySelenium : 소비된 셀레늄의 양
+- dietarySodium : 소비된 나트륨의 양
+- dietarySugar : 소비된 설탕의 양
+- dietaryThiamin : 소비된 티아민(비타민 B1)의 양
+- dietaryVitaminA : 소비된 비타민 A의 양
+- dietaryVitaminB12 : 소비된 시아노코발라민(비타민 B12)의 양
+- ietaryVitaminB6 : 소비된 피리독신(비타민 B6)의 양
+- dietaryVitaminC : 소비된 비타민 C의 양
+- dietaryVitaminD : 소비된 비타민 D의 양
+- dietaryVitaminE : 소비된 비타민 E의 양
+- dietaryVitaminK : 소비된 비타민 K의 양
+- dietaryWater : 소비된 물의 양
+- dietaryZinc : 소비된 아연의 양
+
+### Alcohol consumption
+- bloodAlcoholContent : 혈중 알코올 농도
+- numberOfAlcoholicBeverages : 소비한 표준 알코올 음료의 수
+
+### Mobility
+- appleWalkingSteadiness : 보행 안정도
+- sixMinuteWalkTestDistance : 6분 걷기 테스트 동안 사용자가 걸을 수 있는 거리
+- walkingSpeed : 평지를 꾸준히 걸을 때의 사용자의 평균 속도
+- walkingStepLength : 평지를 꾸준히 걸을 때 사용자의 평균 걸음 길이
+- walkingAsymmetryPercentage : 평지를 걸을 때 한 발이 다른 발과 다른 속도로 움직이는 걸음의 백분율
+- walkingDoubleSupportPercentage : 평지 위를 꾸준히 걷는 동안 사용자의 두 발이 지면에 닿는 시간의 백분율
+- stairAscentSpeed : 계단을 오르는 동안 사용자의 속도
+- stairDescentSpeed : 계단을 내려가는 동안 사용자의 속도
+
+### UV exposure
+- uvExposure : UV 방사선 노출
+
+### Diving
+- underwaterDepth : 수중 사람의 깊이
+- waterTemperature : 수온
