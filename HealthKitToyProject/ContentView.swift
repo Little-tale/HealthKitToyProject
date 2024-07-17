@@ -13,7 +13,7 @@ import SwiftUI
         -w 휴식기 심박수 restingHeartRate
         -w 심박 변이 walkingHeartRateAcerage
         -w 걷기 심박수 평균 heartRateVariabilitySDNN
-        ... 생략 
+        ... 생략
         워치가 없는관계로 폰으로 가능한것만 정리
         -p 수면
         
@@ -29,15 +29,14 @@ import SwiftUI
         -p 걸음 stepCount
         -p 휴식 에너지 basalEnergyBurned
  */
+
+/// 간단한 현재 걸음수를 가져와보자.
 struct ContentView: View {
-    
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            CardView()
+                .frame(height: 100)
         }
         .padding()
     }

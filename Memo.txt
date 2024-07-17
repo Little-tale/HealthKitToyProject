@@ -170,3 +170,8 @@
 ### Diving
 - underwaterDepth : 수중 사람의 깊이
 - waterTemperature : 수온
+
+
+## HKCategoryType
+> 작은 값 데이터 유형
+
