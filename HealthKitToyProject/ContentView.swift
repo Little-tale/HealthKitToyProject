@@ -33,6 +33,8 @@ import SwiftUI
 /// 간단한 현재 걸음수를 가져와보자.
 struct ContentView: View {
     
+    @EnvironmentObject var manager: HealthManager
+    
     var body: some View {
         VStack {
             CardView()
@@ -43,5 +45,7 @@ struct ContentView: View {
 }
 
 #Preview {
+    let manaager = HealthManager()
     ContentView()
+        .environmentObject(manaager)
 }

@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct HealthKitToyProjectApp: App {
+    
+    @StateObject var manager = HealthManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(manager)
         }
     }
 }

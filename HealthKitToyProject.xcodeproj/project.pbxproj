@@ -25,6 +25,7 @@
 		7BB030672C4797BD00399D83 /* Memo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Memo.txt; sourceTree = "<group>"; };
 		7BB0306B2C479ADC00399D83 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7BB0306D2C479D3100399D83 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		7BB0306F2C47A0F000399D83 /* HealthKitToyProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitToyProject.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +59,13 @@
 		7BB030582C47951F00399D83 /* HealthKitToyProject */ = {
 			isa = PBXGroup;
 			children = (
+				7BB0306F2C47A0F000399D83 /* HealthKitToyProject.entitlements */,
+				7BB0306D2C479D3100399D83 /* HealthManager.swift */,
 				7BB030592C47951F00399D83 /* HealthKitToyProjectApp.swift */,
+				7BB0306B2C479ADC00399D83 /* CardView.swift */,
 				7BB0305B2C47951F00399D83 /* ContentView.swift */,
 				7BB0305D2C47952000399D83 /* Assets.xcassets */,
 				7BB0305F2C47952000399D83 /* Preview Content */,
-				7BB0306B2C479ADC00399D83 /* CardView.swift */,
-				7BB0306D2C479D3100399D83 /* HealthManager.swift */,
 			);
 			path = HealthKitToyProject;
 			sourceTree = "<group>";
@@ -281,12 +283,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitToyProject/HealthKitToyProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitToyProject/Preview Content\"";
 				DEVELOPMENT_TEAM = H25F4B7J4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "학습을 위한 헬스킷";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,12 +314,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthKitToyProject/HealthKitToyProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitToyProject/Preview Content\"";
 				DEVELOPMENT_TEAM = H25F4B7J4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "학습을 위한 헬스킷";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
