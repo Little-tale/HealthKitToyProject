@@ -4,8 +4,8 @@
 > 헬스킷을 경험하기 위한 mini 프로젝트입니다. ( 걸음수만 )
 
 
-![IMG_0693](https://github.com/user-attachments/assets/db5c03c6-80ff-444d-908e-9d3bff4c3751)
-
+ <img src="https://github.com/user-attachments/assets/db5c03c6-80ff-444d-908e-9d3bff4c3751" width="300" height="480"/>
+ 
 ## HKObjectType
 > 데이터 유형의 서브 클래스를 포함한 추상 슈퍼 클래스
 모든 HealthKit 데이터는 HKObjectType으로 묶여있다.
