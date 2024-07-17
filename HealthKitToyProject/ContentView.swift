@@ -43,9 +43,3 @@ struct ContentView: View {
         .padding()
     }
 }
-
-#Preview {
-    let manaager = HealthManager()
-    ContentView()
-        .environmentObject(manaager)
-}

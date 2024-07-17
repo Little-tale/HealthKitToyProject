@@ -14,6 +14,7 @@
 		7BB030682C4797BE00399D83 /* Memo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7BB030672C4797BD00399D83 /* Memo.txt */; };
 		7BB0306C2C479ADC00399D83 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0306B2C479ADC00399D83 /* CardView.swift */; };
 		7BB0306E2C479D3100399D83 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB0306D2C479D3100399D83 /* HealthManager.swift */; };
+		7BB030712C47A4BB00399D83 /* 트러블 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB030702C47A4BB00399D83 /* 트러블 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7BB0306B2C479ADC00399D83 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7BB0306D2C479D3100399D83 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		7BB0306F2C47A0F000399D83 /* HealthKitToyProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthKitToyProject.entitlements; sourceTree = "<group>"; };
+		7BB030702C47A4BB00399D83 /* 트러블 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "트러블"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		7BB0304D2C47951F00399D83 = {
 			isa = PBXGroup;
 			children = (
+				7BB030702C47A4BB00399D83 /* 트러블 */,
 				7BB030672C4797BD00399D83 /* Memo.txt */,
 				7BB030582C47951F00399D83 /* HealthKitToyProject */,
 				7BB030572C47951F00399D83 /* Products */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB030612C47952000399D83 /* Preview Assets.xcassets in Resources */,
+				7BB030712C47A4BB00399D83 /* 트러블 in Resources */,
 				7BB0305E2C47952000399D83 /* Assets.xcassets in Resources */,
 				7BB030682C4797BE00399D83 /* Memo.txt in Resources */,
 			);
@@ -290,7 +294,8 @@
 				DEVELOPMENT_TEAM = H25F4B7J4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "학습을 위한 헬스킷";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "앱이 걸음 수 데이터를 읽기 위해 HealthKit 접근 권한이 필요합니다.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "앱이 걸음 수 데이터를 읽기 위해 HealthKit 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,7 +326,8 @@
 				DEVELOPMENT_TEAM = H25F4B7J4U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "학습을 위한 헬스킷";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "앱이 걸음 수 데이터를 읽기 위해 HealthKit 접근 권한이 필요합니다.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "앱이 걸음 수 데이터를 읽기 위해 HealthKit 접근 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
