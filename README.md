@@ -1,10 +1,10 @@
-## 사용자의 걸음을 추적하는 간단한 앱입니다.
+## 헬스킷을 공부하는 간단한 앱입니다.
 
-# HealthKit
+# 설명
 > 헬스킷을 경험하기 위한 mini 프로젝트입니다. ( 걸음수만 )
+> 사용자의 몸무게를 가져옵니다. ( 업데이트 7/18 )
 
-
- <img src="https://github.com/user-attachments/assets/db5c03c6-80ff-444d-908e-9d3bff4c3751" width="300" height="480"/>
+ <img src="https://github.com/user-attachments/assets/897a5260-dbb1-426e-b486-92355c0b7c4e" width="300" height="520"/>
  
 ## HKObjectType
 > 데이터 유형의 서브 클래스를 포함한 추상 슈퍼 클래스

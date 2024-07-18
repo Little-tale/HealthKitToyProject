@@ -66,7 +66,7 @@ extension HealthManager {
             if let stepString = stepCount.formatToString() {
                 let model = HealthInfo(
                     title: HealthInfoType.steps.title,
-                    subTitle: HealthInfoType.steps.subImage,
+                    subTitle: HealthInfoType.steps.sub,
                     amout: stepString,
                     rightImage: HealthInfoType.steps.subImage,
                     sort: HealthInfoType.steps.sort
@@ -88,11 +88,11 @@ extension HealthManager {
             
             guard let weight = weight else { return }
             let weightDouble = weight.quantity.doubleValue(for: .gramUnit(with: .kilo))
-            let str = (String(format: "%.2f", weightDouble) + "KG")
+            let str = (String(format: "%.2f", weightDouble) + " KG")
             
             let model = HealthInfo(
                 title: HealthInfoType.userWeight.title,
-                subTitle:  HealthInfoType.userWeight.subImage,
+                subTitle:  HealthInfoType.userWeight.sub,
                 amout: str,
                 rightImage:  HealthInfoType.userWeight.subImage,
                 sort:  HealthInfoType.userWeight.sort
