@@ -3,6 +3,7 @@
 # 설명
 > 헬스킷을 경험하기 위한 mini 프로젝트입니다. ( 걸음수만 ) <br>
 > 사용자의 몸무게를 가져옵니다. ( 업데이트 7/18 ) <br>
+> 사용자의 수면 시간을 가져옵니다. ( 업데이트 7/20 ) <br> 
 
  <img src="https://github.com/user-attachments/assets/897a5260-dbb1-426e-b486-92355c0b7c4e" width="280" height="520"/>
  
