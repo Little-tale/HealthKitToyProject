@@ -19,10 +19,13 @@ final class HealthManager: ObservableObject {
         //  숫자 값 데이터 유형
         let steps = HKQuantityType(.stepCount)
         let bodyInfo = HKQuantityType(.bodyMass)
+//        let sleepType = HKQuantityType(.appleSleepingWristTemperature) // 손목온도....
+        let sleepType = HKCategoryType(.sleepAnalysis)
         
         let healthTypes: Set = [
             steps,
-            bodyInfo
+            bodyInfo,
+            sleepType
         ]
         
         Task {
