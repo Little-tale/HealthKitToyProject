@@ -135,18 +135,19 @@ extension HealthManager {
                 return
             }
             
-            let totalSleepTime = results
+            let totalSleepTime = results //  [HKCategorySample]
                 .filter { sample in
                     return sample.value == HKCategoryValueSleepAnalysis.asleepUnspecified.rawValue ||
                     sample.value == HKCategoryValueSleepAnalysis.asleepCore.rawValue ||
                     sample.value == HKCategoryValueSleepAnalysis.asleepDeep.rawValue ||
                     sample.value == HKCategoryValueSleepAnalysis.asleepREM.rawValue
                 }
-                .reduce(0){ total, sample in // O(*n*)
+                .reduce(0){ total, sample in // O(*n*). ->  Double
                     return total + sample.endDate.timeIntervalSince(sample.startDate)
                 }
-            // 총 수면 시간 계산 및 출력
+//             총 수면 시간 계산 및 출력
             let hours = totalSleepTime / 3600
+                        /// Double 3600 나머지 / 60
             let minutes = (totalSleepTime.truncatingRemainder(dividingBy: 3600)) / 60
             let sleepTimeString = String(format: "%.0f시간 %.0f분", hours, minutes)
             
